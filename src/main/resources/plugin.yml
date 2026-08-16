@@ -1,0 +1,22 @@
+name: Talkblock
+main: hahaha.talkblock.Talkblock
+version: 1.1.0
+api-version: '1.21'
+description: Chat restriction plugin with offline-player administration support.
+commands:
+  tab:
+    description: 指定プレイヤーをTalkblockします
+    usage: /tab <プレイヤー名|UUID> <理由>
+    permission: talkblock.admin
+  utab:
+    description: Talkblockを解除します
+    usage: /utab <プレイヤー名|UUID> <理由>
+    permission: talkblock.admin
+  tablist:
+    description: Talkblock中のプレイヤー一覧を表示します
+    usage: /tablist
+    permission: talkblock.admin
+permissions:
+  talkblock.admin:
+    description: TalkBlockの管理コマンドを使用できます
+    default: op
